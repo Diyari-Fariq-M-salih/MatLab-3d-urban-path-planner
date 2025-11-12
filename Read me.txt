@@ -1,0 +1,29 @@
+%algorithm files - logic
+Astar_3d_urban
+rrt_star_3d_urban
+prm_3d_urban
+
+%needed files - data - env - functions
+create_environment_3d
+planification_globale
+planner_visualizer
+
+
+%single algorithm command 
+clear; close all; clc;
+scenario = create_environment_3d();
+wps = planification_globale(scenario);   1/2/3
+visualize_mission(scenario, wps);
+
+%scripts to compare methods
+Compare_algorithms
+Compare_planners
+
+%simulink
+1-change 3rd constant cell value to any algorithm,1/2/3 => A*/rrt*/prm
+2-run and view constant repathing
+3-used matlab function block, function/script wrapped in the model
+
+%notes
+1-you can change the start/end pose in the create_environment_3d
+2-you can change the urban buildings pose/numbers in the create_environment_3d
