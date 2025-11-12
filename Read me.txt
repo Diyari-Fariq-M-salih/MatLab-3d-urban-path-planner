@@ -20,8 +20,8 @@ Compare_algorithms
 Compare_planners
 
 %simulink
-1-change 3rd constant cell value to any algorithm,1/2/3 => A*/rrt*/prm
-2-run and view constant repathing
+1-switch lower cell value to any algorithm,1/2/3 => A*/rrt*/prm
+2-run and view constant repathing, unless you set the timer to never, then use manual switch trigger 1/0
 3-used matlab function block, function/script wrapped in the model
 
 %notes
